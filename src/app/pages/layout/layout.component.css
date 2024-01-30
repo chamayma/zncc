@@ -1,0 +1,20 @@
+.flex-container1 {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically at the center */
+  }
+  
+  /* Styling for your logo image */
+  .logo-image {
+    width: 40px; /* Set a suitable width for your image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right:12px
+   /* Adjust spacing between the image and h1 tag */
+  }
+
+  .navbar-brand-autodark{
+    font-size:20px;
+    margin-top: 12px;
+  }
+  

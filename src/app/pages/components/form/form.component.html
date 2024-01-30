@@ -1,0 +1,377 @@
+          <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="company_name"
+                    >Company name (Jina la Kampuni)<span class="required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                  formControlName="company_name"
+                    name="company_name"
+                    id="company_name"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    required
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="company_name"
+                    >Company Email (Barua Pepe ya Kampuni)
+                  </label>
+                  <input
+                  formControlName="company_email"
+                    name="company_email"
+                    id="company_email"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    type="email"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="company_phone"
+                    >Company Phone (Simu ya Kampuni)
+                  </label>
+                  <input
+                  formControlName="company_phone"
+                    name="company_phone"
+                    id="company_phone"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="dropdown" id="dropdown-label"
+                    >Region (Mkoa)<span class="required">*</span></label
+                  >
+                  <select
+                  formControlName="region"
+                    name="region"
+                    id="region"
+                    class="form-control validation"
+                    required
+                  >
+                    <option value="">Choose</option>
+                    <option value="1">Mjini Magharibi</option>
+                    <option value="2">Kaskazini Unguja</option>
+                    <option value="3">Kusini</option>
+                    <option value="4">Kaskazini Pemba</option>
+                    <option value="5">Kusini Pemba</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="dropdown" id="dropdown-label"
+                    >District (Wilaya)<span class="required">*</span></label
+                  >
+                  <select
+                  formControlName="district"
+                    name="district"
+                    id="district"
+                    class="form-control validation"
+                    required
+                  >
+                    <option value="" disabled selected>Choose</option>
+                    <option value="Mjini">Mjini</option>
+                    <option value="Magharibi A">Magharibi A</option>
+                    <option value="Magharibi B">Magharibi B</option>
+                    <option value="Kusini">Kusini</option>
+                    <option value="Kati">Kati</option>
+                    <option value="Kaskazini A">Kaskazini A</option>
+                    <option value="Kaskazini B">Kaskazini B</option>
+                    <option value="wete">wete</option>
+                    <option value="Chake cheke">Chake cheke</option>
+                    <option value="Mkoani">Mkoani</option>
+                    <option value="micheweni">micheweni</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="owner_name"
+                    >Company owner's name (Majina ya wamiliki)
+                  </label>
+                  <input
+                    formControlName="owner_name"
+                    name="owner_name"
+                    id="owner_name"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="owner_email"
+                    >Owner's Email (Barua pepe za wamiliki)
+                  </label>
+                  <input
+                    formControlName="owner_email"
+                    name="owner_email"
+                    id="owner_email"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="owner_phone"
+                    >Owner's Phone(Simu za wamiliki)
+                  </label>
+                  <input
+                    formControlName="owner_phone"
+                    name="owner_phone"
+                    id="owner_phone"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="representative_name"
+                    >Company representative name (Jina la mwakilishi wa
+                    Kampuni)<span class="required">*</span></label
+                  >
+                  <input
+                    formControlName="representative_name"
+                    name="representative_name"
+                    id="representative_name"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    required
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <p class="radio-btn-description">Gender</p>
+                <div class="form-group">
+                  <div class="radio_button" >
+                      <label for="male">Male</label>
+                      <input
+                        formControlName="male"
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="Male"
+                        checked
+                      />
+                      <label for="female">Female</label>
+                      <input
+                        formControlName="female"
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="Female"
+                      />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="position"
+                    >Position (Cheo)<span class="required">*</span></label
+                  >
+                  <input
+                  formControlName="position"
+                    name="position"
+                    id="position"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    required
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="representative_email"
+                    >Representative Email<span class="required">*</span></label
+                  >
+                  <input
+                    formControlName="representative_email"
+                    name="representative_email"
+                    id="representative_email"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="representative_phone"
+                    >Representative Phone (Barua pepe za wamiliki)<span
+                      class="required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    formControlName="representative_phone"
+                    type="text"
+                    name="representative_phone"
+                    id="representative_phone"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="business_type"
+                    >Business Type(Aina ya Biashara)<span class="required"
+                      >*</span
+                    ></label
+                  >
+                  <select
+                    formControlName="business_type"
+                    name="business_type"
+                    id="business_type"
+                    class="form-control validation"
+                    required
+                  >
+                    <option value="" disabled selected>Choose</option>
+
+                    <option value="Sole proprietorship (Binafsi)">
+                      Sole proprietorship (Binafsi)
+                    </option>
+                    <option value="Partnership (Ubia)">
+                      Partnership (Ubia)
+                    </option>
+                    <option value="Company (Kampuni)">Company (Kampuni)</option>
+                    <option value="Association (Jumuiya/Kikundi)">
+                      Association (Jumuiya/Kikundi)
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="business_cluster"
+                    >Business Cluster (Kundi la Biashara)<span class="required"
+                      >*</span
+                    ></label
+                  >
+                  <select
+                    formArrayName="business_cluster"
+                    name="business_cluster"
+                    id="business_cluster"
+                    class="form-control validation"
+                    required
+                  >
+                    <option value="" disabled selected>Choose</option>
+
+                    <option value="Agriculture (Kilimo)">
+                      Agriculture (Kilimo)
+                    </option>
+                    <option value="Tourism (Utalii)">Tourism (Utalii)</option>
+                    <option value="Industry (Viwanda)">
+                      Industry (Viwanda)
+                    </option>
+                    <option value="Trade (Biashara)">Trade (Biashara)</option>
+                    <option value="Services (Huduma)">Services (Huduma)</option>
+                    <option value="Construction (Ujenzi)">
+                      Construction (Ujenzi)
+                    </option>
+                    <option value="Creativity (Ubunifu)">
+                      Creativity (Ubunifu)
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="business_activity"
+                    >Business Activities(Shughuli unayofanya/unachozalisha)<span
+                      class="required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    formControlName="business_activity"
+                    type="text"
+                    name="business_activity"
+                    id="business_activity"
+                    class="form-control validation"
+                    placeholder="Your answer"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="company_certificate"
+                    >Company Registration Certificate (TIN, BPRA, License)<span
+                      class="required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    formControlName="company_certificate"
+                    type="file"
+                    name="company_certificate"
+                    class="form-control validation"
+                    id="company_certificate"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="representative_cv"
+                    >Company Representative CV</label
+                  >
+
+                  <input
+                    formControlName="representative_cv"
+                    type="file"
+                    name="representative_cv"
+                    class="form-control validation"
+                    id="representative_cv"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input
+                  type="submit"
+                  class="custom-btn btn-16"
+                  [disabled]="dataForm.invalid"
+                  id="submit"
+                  value="Submit"
+                />
+              </div>
+              <div class="col-sm-6" id="clear-form">
+                <a href="#" class="link" style="float: right;"> <span>Clear Form</span> </a>
+              </div>
+            </div>
+          </form>
